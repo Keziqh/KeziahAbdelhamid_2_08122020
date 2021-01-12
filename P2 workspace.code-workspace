@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Cours OC"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../Exo integ"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
