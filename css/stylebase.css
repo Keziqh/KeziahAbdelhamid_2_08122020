@@ -4,9 +4,56 @@ Par Keziah Abdelhamid
 
 ---------------------*/
 
-/* fonts */
+/* Font */
 
 body
 {
     font-family: 'Roboto', sans-serif;
+}
+
+/*essentials*/
+
+body 
+{
+    margin: 0px;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+h1
+{
+    font-size: 1em;
+}
+
+.container 
+{
+    padding-right: 0.938rem;
+    padding-left: 0.938rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headernav
+{
+    margin-top: O.313rem;
+    text-align: center;
+    border-bottom: 0.188rem solid #0065FC;
+    border-top: 0px solid #0065FC;
+    margin: 0.938rem 0rem;
 }

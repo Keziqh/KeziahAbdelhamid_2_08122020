@@ -5,25 +5,34 @@
         <link rel="stylesheet" href="css/stylebase.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
     </head>
 
     <body>
-        <header>
-            <a href="#"><img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia"></a>
-                <ul>
-                    <li>hébergement</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
-                </ul>
+        <header class="header container">
+            <a href="#"><img id="logo" src="images/logo/Reservia.svg" alt="logo reservia"></a>
+                <nav class="headernav">
+                    <div class="hebergement_activite">
+                        <a class="headernavlink" href="#" >hébergement</a>
+                        <a class="headernavlink" href="#" >Activités</a>
+                    </div>
+                    <a class="signup" href="#" >S'inscrire</a>
+                </nav>
         </header>
+
+        
         <main>
             <!-- SEARCH -->
 
             <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <input type="text" name="recherche_ville" placeholder="Marseille, France">
+                <div class="sous_header">
+                    <div class="titre_principal">
+                        <div class="trouvez"><h1>Trouvez votre hébergement pour des vacances de rêve</h1></div>
+                        <div class="enplein"><p>En plein centre ville ou en pleine nature</p></div>
+                    </div>
+                    <input type="text" name="recherche_ville" placeholder="Marseille, France">
+                </div>
             </section>
 
             <!-- FILTERS -->
