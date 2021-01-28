@@ -152,4 +152,185 @@ input
     height: 2.7em;
 }
 
+/* Filtres */ 
 
+#filter {
+    padding-left: 50px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.price:hover, .family:hover, .romantic:hover, .animal:hover {
+    background: #deebff;
+}
+
+.price, .family, .romantic, .animal {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    border-left: none;
+    margin-right: 25px;
+    height: 2.8em;
+    cursor: pointer;
+}
+.filter-title {
+    font-weight: bold;
+    margin-right: 15px;
+}
+.family i{
+    width: 40px;
+}
+.price i, .family i, .romantic i, .animal i {
+    color: #0065FC;
+    background: #deebff;
+    border: 13px solid #deebff;
+    border-radius: 100%;
+}
+.price h3, .family h3, .romantic h3, .animal h3 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.icon-filter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+.fa-info {
+    color: #0065FC;
+}
+.fa-circle {
+    color: #F2F2F2;
+}
+.info p{
+    padding-left: 10px;
+}
+
+/* Resa */
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+#rooms {
+    background: #F2F2F2;
+    border-radius: 25px;
+    width: 60em;
+}
+#main-rooms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.rooms {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    transition: transform 1s;
+}
+.rooms p, .rooms h4 {
+    margin: 5px;
+}
+.rooms img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 8em;
+}
+.rooms:hover {
+    transform: scale(1.02);
+    object-fit: cover;
+    box-shadow: 5px;
+}
+.rooms-title {
+    padding: 20px Opx 20px 20px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.rooms a {
+    text-decoration: none;
+    color: black;
+}
+.fa-star {
+    color: #0065FC;
+    font-size: small;
+    padding-left: 5px;
+}
+.fa-star.grey {
+    color: #f2f2f2;
+    font-size: small;
+}
+.rooms figure {
+    margin: 0;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaaaaa;
+    width: 17em;
+    height: 14em;
+}
+.room figcaption p {
+    font-size: 0.8em;
+}
+.rooms figcaption {
+    margin-left: 5px;
+}
+.more a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.more {
+    padding: 20px;
+}
+
+
+/* Les plus populaires */
+
+.aside img {
+    width: 8em;
+    height: 8em;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+}
+.aside {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.aside:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(O.5);
+}
+aside {
+    display:flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 25px;
+    float: right;
+    width: 25em;
+    height: auto;
+}
+.aside-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    font-size: 1em;
+}
