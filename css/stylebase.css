@@ -2,7 +2,9 @@
 .logoReservia {
   margin-left: 1rem;
 }
-
+/*#total {
+  max-width: 1100px;
+} */
 body {
   margin: 0px;
 }
@@ -23,7 +25,6 @@ h1 {
 * {
   font-family: "Raleway", "Sans serif";
   list-style: none;
-  /*border:1px solid #F34607 */
 }
 
 .container {
@@ -364,152 +365,168 @@ p.NbLogements {
 
 /* Resa */
 
-#container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 50px;
+.LesPlusPopulaires .etoilesnote {
+  position: absolute;
+  bottom: 5%;
 }
-#rooms {
+
+figure:hover {
+  transform: scale(1.02);
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.reservation.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#hebergement .hebergementsClassiques {
+  order: 1;
+  flex: 1;
+  margin-right: 3%;
+}
+
+@media (max-width: 640px) {
+  #hebergement .hebergementsClassiques {
+    order: 1;
+    flex: 1;
+    margin-right: 0%;
+  }
+}
+
+#hebergement .LesPlusPopulaires {
+  order: 2;
+  flex: 0 1 35%;
+}
+
+@media (max-width: 640px) {
+  #hebergement .LesPlusPopulaires {
+    order: 0;
+    flex: 0 1 100%;
+  }
+}
+
+#hebergement .fondgris {
   background: #f2f2f2;
-  border-radius: 25px;
-  width: 60em;
+  border-radius: 20px;
+  padding: 30px 25px;
+  min-height: 519px;
+  margin-bottom: 20px;
 }
-#main-rooms {
+
+@media (max-width: 640px) {
+  #hebergement .fondgris {
+    background: #f2f2f2;
+    border-radius: 0px !important;
+    padding: 30px 25px;
+    min-height: 519px;
+    margin-bottom: 0px;
+  }
+}
+
+#hebergement .fondgris .group-item {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
-}
-
-.rooms {
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  transition: transform 1s;
-}
-.rooms p,
-.rooms h4 {
-  margin: 5px;
-}
-.rooms img {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  object-fit: cover;
-  width: 100%;
-  height: 8em;
-}
-.rooms:hover {
-  transform: scale(1.02);
-  object-fit: cover;
-  box-shadow: 5px;
-}
-.rooms-title {
-  padding: 20px 0px 20px 20px;
-  font-weight: bold;
-  font-size: 1em;
-}
-.rooms a {
-  text-decoration: none;
-  color: black;
-}
-.fa-star {
-  color: #0065fc;
-  font-size: small;
-  padding-left: 5px;
-}
-.fa-star.grey {
-  color: #f2f2f2;
-  font-size: small;
-}
-.rooms figure {
-  margin: 0;
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  box-shadow: 4px 4px 6px #aaaaaa;
-  width: 17em;
-  height: 14em;
-}
-
-.rooms figcaption p {
-  font-size: 0.8em;
-}
-.rooms figcaption {
-  margin-left: 5px;
-}
-.more a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.more {
-  padding: 20px;
-}
-
-/* Les plus populaires */
-
-.aside img {
-  width: 8em;
-  height: 8em;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  object-fit: cover;
-}
-
-.aside:hover {
-  transform: scale(1.02);
-  transition: transform 1s;
-}
-aside {
-  display: flex;
-  flex-direction: column;
-  background: #f2f2f2;
-  border-radius: 25px;
-  float: right;
-  width: 25em;
-  height: auto;
-}
-.aside-title {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 20px;
-  font-size: 1em;
+  border-radius: 20px;
 }
-.aside p {
-  margin-top: 24px;
+
+@media (max-width: 640px) {
+  #hebergement .fondgris .group-item {
+    flex-direction: column;
+  }
 }
-.aside figure {
-  display: flex;
-  background: #ffffff;
-  border: 4px solid #ffffff;
-  border-radius: 25px;
-  box-shadow: 4px 4px 6px #aaa;
-  margin: 10px 20px;
+
+@media (max-width: 640px) {
+  .hebergementsClassiques .fondgris {
+    background: white !important;
+  }
 }
-#aside {
-  display: flex;
-  flex-direction: column;
+
+@media (max-width: 640px) {
+  #hebergement .fondgris {
+    flex-direction: column;
+  }
 }
-#aside a {
-  text-decoration: none;
-  color: black;
+
+#hebergement .fondgris .group-item figure {
+  width: calc(100% / 3.3);
+  background: #fff;
+  padding: 0.3rem;
+  border-radius: 1.25rem;
+  margin: 0 0 30px 0;
+  box-shadow: 0px 0px 10px #55555538;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-.aside figcaption {
-  padding-left: 5px;
+
+@media (max-width: 640px) {
+  #hebergement .fondgris .group-item figure {
+    transform: scale(1.05);
+    width: auto;
+  }
 }
-.aside figcaption h4 {
+
+#hebergement .fondgris .group-item figure figcaption {
+  padding: 10px;
+  position: relative;
+}
+
+#hebergement .fondgris .group-item figure figcaption p {
+  margin: 0;
+}
+
+#hebergement .fondgris .group-item figure figcaption p:first-child {
+  font-size: 14px;
+}
+
+#hebergement .fondgris .group-item figure figcaption p:nth-child(2) {
+  font-size: 12px;
   margin: 5px 0;
 }
-.aside figcaption p {
-  margin-top: 5px;
+
+#hebergement .fondgris .group-item figure figcaption i {
+  color: #0065fc;
+  font-size: 12px;
 }
-.aside span {
-  margin-top: 30px;
+
+#hebergement .fondgris .group-item figure img {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#hebergement .LesPlusPopulaires .group-item {
+  flex-direction: column;
+}
+
+#hebergement .LesPlusPopulaires .group-item figure {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#hebergement .LesPlusPopulaires .group-item figure img {
+  max-width: 100px;
+  max-height: initial;
+  height: 115px;
+  border-radius: 20px 0 0 20px;
+}
+
+#hebergement h1,
+#hebergement .stonk {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hebergement h1 i {
+  margin: auto 0;
 }
 
 /* Activités à Marseille */
