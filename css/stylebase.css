@@ -2,9 +2,7 @@
 .logoReservia {
   margin-left: 1rem;
 }
-/*#total {
-  max-width: 1100px;
-} */
+
 body {
   margin: 0px;
 }
@@ -68,7 +66,7 @@ header .main-container .header-container {
   }
 }
 .menutrait a:hover,
-.s-mob a:hover {
+.s-inscrire a:hover {
   text-decoration: none;
 }
 
@@ -76,7 +74,7 @@ header .main-container .header-container {
   margin-top: 5px !important;
 }
 
-.s-mob {
+.s-inscrire {
   margin-top: 5px;
 }
 
@@ -126,7 +124,7 @@ header .main-container .header-container {
     align-content: center;
     margin-left: -5%;
   }
-  .s-mob {
+  .s-inscrire {
     margin-left: -34%;
   }
   header .main-container .header-container nav ul {
@@ -531,103 +529,136 @@ figure:hover {
 
 /* Activités à Marseille */
 
-.activities h3 {
-  padding: 10px 20px;
+.txtActiviteVille {
+  padding: 0px 0px 0px 20px;
 }
-#activities {
+.txtActivite {
+  padding: 0px 0px 0px 20px;
+}
+.activiteContainer .fondgris h1 {
+  margin-left: 25px;
+}
+.activiteContainer .flex-container {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px 15px;
+}
+#ActiviteAMarseille {
+  width: 70%;
+  margin-right: 25px;
+}
+#ActiviteAMarseille .fondgris {
+  width: 35%;
+}
+#ActiviteAMarseille {
+  display: flex;
+}
+#activites ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+#activites ul li {
+  padding: 3px;
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 0 30px 0;
+  box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
+}
+#activites ul li img {
+  height: 100%;
+  max-height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+@media (min-width: 991px) {
+  #activites .group-item {
+    width: 50%;
+    display: flex;
+  }
+  #activites .group-item .columndouble,
+  #activites .group-item .column {
+    max-width: 45%;
+    min-width: 45%;
+    margin: auto;
+  }
+  #activites .group-item .column,
+  #activites .group-item .column .item {
+    height: 100%;
+  }
+  #activites .group-item .column .item .activiteimg,
+  #activites .group-item .column .item .activiteimg img {
+    height: 80%;
+    max-height: initial;
+    height: 92%;
+    margin-bottom: -9%;
+  }
+}
+#activites .group-item .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  order: 1;
+  flex: 1;
 }
-#main-visit {
+#activites .group-item .columndouble {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 20px;
+  flex-direction: column;
+  order: 2;
+  flex: 0 1 35%;
 }
-#main-visit img {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+#activites .group-item .item {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 0 30px 0;
+  -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#activites .group-item .item:hover {
+  transform: scale(1.05);
+}
+#activites .group-item .item img {
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
   object-fit: cover;
-  width: 300px;
-  margin: auto;
-  opacity: 1;
-}
-.activ:hover {
-  transform: scale(1.02);
-}
-.vieuxp img,
-.calanques img {
-  height: 482px;
-}
-.pomegues img,
-.dame img,
-.longchamp img,
-.frioul img {
-  height: 200px;
-  align-content: center;
-}
-#main-visit a {
-  text-decoration: none;
-  color: black;
-  font-size: small;
-}
-.vieuxp figure,
-.calanques figure,
-.pomegues figure,
-.dame figure,
-.longchamp figure,
-.frioul figure {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid transparent;
-  border-radius: 25px;
-  box-sizing: border-box;
-}
-.pomegues,
-.dame {
-  padding-bottom: 2px;
-}
-.vieuxp h3,
-.calanques h3,
-.pomegues h3,
-.dame h3,
-.longchamp h3,
-.frioul h3 {
-  padding: 15px 30px;
-}
-.main-visit img:hover {
-  opacity: 0.5;
-}
-.activities {
-  padding-left: 50px;
+  border-radius: 20px 20px 0 0;
 }
 
 /* Footer */
 
-#footer {
-  margin-top: 40px;
+footer {
   background: #f2f2f2;
+  bottom: 0;
   display: flex;
+  position: inherit;
+  justify-content: space-around;
+}
+@media (max-width: 640px) {
+  footer {
+    flex-flow: row wrap;
+  }
+}
+.bloc-footer {
+  padding: 20px;
   width: 100%;
+  padding-left: 10%;
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  width: 50%;
+ul.liste {
+  color: #464646;
+  padding: 0;
+  line-height: 2rem;
 }
-.footer a {
+#footer .bloc-footer .liste {
+  flex-shrink: 1;
+  list-style: none;
+}
+#footer a li {
   text-decoration: none;
   color: black;
-  padding: 7px 0px;
-  font-size: 14px;
-}
-.footer a:visited {
-  text-decoration: none;
-  color: black;
-}
-.footer h4 {
-  font-weight: bold;
-  padding: 7px 0px;
 }
