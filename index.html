@@ -20,15 +20,14 @@
                         <a href="#" class="logo"><img src="images/logo/Reservia.svg" alt="Reservia" /></a>
                     </div>
                     <nav>
-                        <ul>
-                            <div class="menutrait">
+                        <ul class="menutrait">
+                            
                                 <li class="nav-hebergement"><a href="#hebergement">Hébergements</a></li>
                                 <li class="nav-activite"><a href="#activites">Activités</a></li>
-                            </div>
-                            <div class="s-inscrire">
-                                <li class="nav-sincrire"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
-                            </div>
                         </ul>
+                            <ul class="s-inscrire">
+                                <li class="nav-sincrire"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
+                            </ul>
                     </nav>
                 </div>
             </div>
@@ -42,11 +41,11 @@
                 <p>En plein centre ville ou en plaine nature</p>
                 <div class="formSearch">
                     <form class="recherche" action="/mon-action.php">
-                        <button type="none"><i class="fas fa-map-marker-alt"></i></button>
-                        <input type="text" name="recherche">
-                        <button class="btnrecherche" type="submit">
-                            <p class="textbtn">Rechercher</p>
-                            <p class="textbtn2"><i class="fas fa-search"></i></p>
+                        <button type="button"  ><i class="fas fa-map-marker-alt"></i></button>
+                        <input type="text" placeholder="Marseille, France" name="recherche">
+                        <button class="btnrecherche"  type="submit">
+                            <i>Recherche</i>
+                            <i class="fas fa-search"></i>
                         </button>
                     </form>
                 </div>
@@ -93,7 +92,7 @@
                 <div class="reservation container">
                     <div class="hebergementsClassiques">
                         <div class="fondgris">
-                            <h1>Hebergements à Marseille</h1>
+                            <h2>Hebergements à Marseille</h2>
                             <div class="group-item">
                                 <figure>
                                     <img src="images/hebergements/auberge_la_cannebiere.jpg" alt="">
@@ -176,10 +175,10 @@
                     <!-- Zone " Les plus populaires -->
                     <div class="LesPlusPopulaires">
                         <div class="fondgris">
-                            <h1>
-                                <p>Les plus populaires</p>
-                                <div class="stonk"><i class="fas fa-chart-line"></i></div>
-                            </h1>
+                            <h2>
+                                <span>Les plus populaires</span>
+                                <span class="stonk"><i class="fas fa-chart-line"></i></span>
+                            </h2>
                             <div class="group-item">
                                 <figure>
                                     <img src="images/hebergements/hotel_le_soleil_du_matin.jpg" alt="">
@@ -226,8 +225,8 @@
         <section id="activites">
             <div class="activiteContainer">
                 <div class="fondgris">
-                    <h1>Activités à Marseille</h1>
-                    <ul class="flex-container">
+                    <h2>Activités à Marseille</h2>
+                    <div class="flex-container">
                         <div class="group-item">
                             <div class="column">
                                 <div class="item">
@@ -310,9 +309,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div>
-            </ul>
             </div>
         </section>
     </main>

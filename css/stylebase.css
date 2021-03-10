@@ -20,6 +20,10 @@ h1 {
   font-size: 1em;
 }
 
+h2 {
+  font-size: 1em;
+}
+
 * {
   font-family: "Raleway", "Sans serif";
   list-style: none;
@@ -210,7 +214,7 @@ header {
   flex-direction: column;
 }
 
-form.recherche button[type="none"] {
+form.recherche button[type="button"] {
   background: #f2f2f2;
   border: 1px #f2f2f2 solid;
   padding: 5px 15px;
@@ -227,7 +231,7 @@ form.recherche button[type="submit"] {
   border-radius: 0 15px 15px 0;
   color: #fff;
   height: 43px;
-  padding: 0px 15px;
+  padding: 12px;
 }
 
 @media (max-width: 640px) {
@@ -238,13 +242,13 @@ form.recherche button[type="submit"] {
 }
 
 @media (max-width: 640px) {
-  p.textbtn {
+  a.textbtn {
     display: none;
   }
 }
 
 @media (min-width: 640px) {
-  p.textbtn2 {
+  a.textbtn2 {
     display: none;
   }
 }
@@ -517,13 +521,13 @@ figure:hover {
   border-radius: 20px 0 0 20px;
 }
 
-#hebergement h1,
+#hebergement h2,
 #hebergement .stonk {
   display: flex;
   justify-content: space-between;
 }
 
-#hebergement h1 i {
+#hebergement h2 i {
   margin: auto 0;
 }
 
@@ -535,7 +539,7 @@ figure:hover {
 .txtActivite {
   padding: 0px 0px 0px 20px;
 }
-.activiteContainer .fondgris h1 {
+.activiteContainer .fondgris h2 {
   margin-left: 25px;
 }
 .activiteContainer .flex-container {
